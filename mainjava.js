@@ -31,8 +31,7 @@ function equalto() {
 		var ss = calculatearea.innerHTML;
 
 		if (ss.search("sin") == -1 && ss.search("cos") == -1 && ss.search("tan") == -1 && ss.search("log") == -1) {
-			var show = calculatearea.innerHTML;
-			var ans = eval(show);
+			var ans = eval(calculatearea.innerHTML);
 			result.innerHTML = ans;	
 		} else if(ss.search("sin") != -1){
 			var ee = ss.replace("sin" , "(Math.PI/180)*");
